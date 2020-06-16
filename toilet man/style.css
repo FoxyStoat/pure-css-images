@@ -41,8 +41,8 @@ p.two {
 /* BODY */
 
 .head {
-	top: 15%;
-	left: 40%;
+	top: 12%;
+	left: 35%;
 	width: 15%;
 	height: 15%;
 }
@@ -52,7 +52,11 @@ p.two {
 	left: 26%;
 	width: 13%;
 	height: 40%;
-	transform: rotate(30deg);
+	transform: rotate(20deg);
+	-webkit-transform: rotate(20deg);
+	-moz-transform: rotate(20deg);
+	-ms-transform: rotate(20deg);
+	-o-transform: rotate(20deg);
 }
 
 .thighs {
@@ -96,6 +100,15 @@ p.two {
 	width: 40%;
 	height: 20%;
 	clip-path: circle(50% at 50% 0);
+}
+
+.lid {
+    position: absolute;
+    background: #000;
+	bottom: 36%;
+	left: 10%;
+	width: 2%;
+	height: 18%;
 }
 
 @media all and (max-width: 600px) {
