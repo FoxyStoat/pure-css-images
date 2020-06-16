@@ -22,8 +22,10 @@ p.two {
 
 .toilet-base,
 .seat,
+.lid,
 .head,
 .torso,
+.arms,
 .thighs,
 .lower-legs,
 .feet {
@@ -33,6 +35,7 @@ p.two {
 
 .head,
 .torso,
+.arms,
 .thighs,
 .lower-legs {
 	border-radius: 50px;
@@ -57,6 +60,18 @@ p.two {
 	-moz-transform: rotate(20deg);
 	-ms-transform: rotate(20deg);
 	-o-transform: rotate(20deg);
+}
+
+.arms {
+	bottom: 54%;
+	left: 32%;
+	width: 25%;
+	height: 6%;
+	transform: rotate(65deg);
+	-webkit-transform: rotate(65deg);
+	-moz-transform: rotate(65deg);
+	-ms-transform: rotate(65deg);
+	-o-transform: rotate(65deg);
 }
 
 .thighs {
@@ -103,8 +118,6 @@ p.two {
 }
 
 .lid {
-    position: absolute;
-    background: #000;
 	bottom: 36%;
 	left: 10%;
 	width: 2%;
