@@ -1,0 +1,107 @@
+.container {
+	position: relative;
+	display: block;
+	height: 600px;
+	width: 600px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+p {
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-family: 'rboto', sans-serif;
+	margin-bottom: 0;
+	letter-spacing: .1em;
+}
+
+p.two {
+	margin-top: 0;
+}
+
+.toilet-base,
+.seat,
+.head,
+.torso,
+.thighs,
+.lower-legs,
+.feet {
+	position: absolute;
+	background: #000;
+}
+
+.head,
+.torso,
+.thighs,
+.lower-legs {
+	border-radius: 50px;
+}
+
+/* BODY */
+
+.head {
+	top: 15%;
+	left: 40%;
+	width: 15%;
+	height: 15%;
+}
+
+.torso {
+	bottom: 32%;
+	left: 26%;
+	width: 13%;
+	height: 40%;
+	transform: rotate(30deg);
+}
+
+.thighs {
+	bottom: 35%;
+	left: 23%;
+	width: 30%;
+	height: 11%;
+	transform: rotate(-3deg);
+}
+
+.lower-legs {
+	bottom: 22%;
+	left: 27%;
+	width: 38%;
+	height: 10%;
+	transform: rotate(100deg);
+}
+
+.feet {
+	bottom: 5.5%;
+	left: 39%;
+	width: 50%;
+	height: 12%;
+	clip-path: polygon(30% 100%, 5% 30%, -95% 120%);
+	border-radius: 10px;
+}
+
+/* TOILET */
+
+.toilet-base {
+	bottom: 5%;
+	left: 10%;
+	width: 20%;
+	height: 30%;
+	clip-path: polygon(0 0, 0 100%, 100% 100%);
+}
+
+.seat {
+	bottom: 15%;
+	left: 5.8%;
+	width: 40%;
+	height: 20%;
+	clip-path: circle(50% at 50% 0);
+}
+
+@media all and (max-width: 600px) {
+
+  .container {
+    width: 250px;
+    height: 250px;
+  }
+}
